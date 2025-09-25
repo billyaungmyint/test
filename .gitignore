@@ -2,3 +2,5 @@ __pycache__/
 .mcp.json
 *.mcp.json
 .env
+*.png
+.pytest_cache/
