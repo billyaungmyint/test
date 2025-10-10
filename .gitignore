@@ -1,6 +1,485 @@
-__pycache__/
+# ==================================
+# COMPREHENSIVE .GITIGNORE
+# Covers Python, ML, AI, Web, and General Development
+# ==================================
+
+# ==================================
+# SECURITY & SENSITIVE FILES
+# ==================================
+# API Keys and Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.secret
+*.token
+config.local.*
+secrets.*
+credentials.*
+auth.*
 .mcp.json
 *.mcp.json
-.env
-*.png
+
+# Environment-specific configs
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.production
+
+# AWS Credentials
+.aws/
+aws-credentials.*
+
+# Google Cloud Credentials
+gcloud-credentials.*
+service-account-key.*
+*-service-account.json
+
+# Azure Credentials
+azure-credentials.*
+
+# SSH Keys
+id_rsa
+id_rsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ==================================
+# PYTHON SPECIFIC
+# ==================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
 .pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ==================================
+# MACHINE LEARNING & AI SPECIFIC
+# ==================================
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.pth
+*.pt
+*.safetensors
+*.bin
+
+# Large datasets (but allow small sample files)
+data/
+datasets/
+large_data/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+!sample*.csv
+!example*.csv
+!test*.csv
+
+# Weights and model artifacts
+weights/
+checkpoints/
+models/
+trained_models/
+saved_models/
+
+# TensorBoard logs
+logs/
+tensorboard/
+runs/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# Experiment tracking
+experiments/
+outputs/
+
+# ==================================
+# GENERATED FILES & ARTIFACTS
+# ==================================
+# Generated plots and images (but allow documentation images)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+plots/
+figures/
+images/
+visualizations/
+!docs/**/*.png
+!docs/**/*.jpg
+!readme_images/
+
+# Generated documents
+*.docx
+*.xlsx
+*.pptx
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Cache files
+.cache/
+*.cache
+
+# ==================================
+# LOGS & DEBUG FILES
+# ==================================
+# Application logs
+*.log
+*.log.*
+logs/
+log/
+debug.log
+error.log
+access.log
+application.log
+
+# Python logging
+python.log
+django.log
+flask.log
+
+# System logs
+*.out
+*.err
+
+# Debug dumps
+core
+*.dump
+*.dmp
+
+# ==================================
+# DATABASE FILES
+# ==================================
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# Database config
+database.ini
+db.ini
+
+# ==================================
+# OS SPECIFIC
+# ==================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==================================
+# IDE & EDITOR SPECIFIC
+# ==================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==================================
+# WEB DEVELOPMENT
+# ==================================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+out/
+
+# ==================================
+# CLOUD & CONTAINERS
+# ==================================
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+terraform.tfvars.json
+
+# ==================================
+# BACKUP & ARCHIVE FILES
+# ==================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bz2
+*.xz
+
+# Backup files
+*.backup
+*.old
+*.orig
+*_backup
+*_old
+
+# ==================================
+# PROJECT SPECIFIC EXCEPTIONS
+# ==================================
+# Keep example/template files
+!*example*
+!*template*
+!*sample*
+
+# Keep specific files that might be useful
+!README*.md
+!LICENSE*
+!CHANGELOG*
+!requirements*.txt
