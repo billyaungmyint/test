@@ -43,6 +43,13 @@ service-account-key.*
 # Azure Credentials
 azure-credentials.*
 
+# SQL Server / Database Connection Files
+sql_connection_config.ps1
+*connection_string*.txt
+*connection_string*.ps1
+db_config.ps1
+database_credentials.*
+
 # SSH Keys
 id_rsa
 id_rsa.pub
