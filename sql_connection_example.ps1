@@ -11,7 +11,7 @@ Write-Host "`n=== Example 1: Basic Connection Test ===" -ForegroundColor Cyan
 # NOTE: Replace with your actual server, database, username, and password
 $serverName = "localhost"
 $databaseName = "master"
-$username = "sa"
+$username = "sadmin"
 # IMPORTANT: Never hardcode passwords in production!
 # $password = "YourPasswordHere"
 
@@ -65,7 +65,7 @@ Write-Host "`n=== Example 5: Secure Password Prompt ===" -ForegroundColor Cyan
 # Uncomment to run:
 # $server = "localhost"
 # $database = "master"
-# $user = "sa"
+# $user = "sadmin"
 # $securePassword = Read-Host "Enter SQL Password" -AsSecureString
 # $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($securePassword)
 # $plainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
@@ -82,7 +82,7 @@ Write-Host "`n=== Example 6: Environment Variables ===" -ForegroundColor Cyan
 # Set environment variables (do this once in your session or profile)
 # $env:SQL_SERVER = "localhost"
 # $env:SQL_DATABASE = "TestDB"
-# $env:SQL_USERNAME = "sa"
+# $env:SQL_USERNAME = "sadmin"
 # $env:SQL_PASSWORD = "YourPassword"  # NOT recommended for production!
 
 # Then use them:

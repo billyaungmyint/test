@@ -43,7 +43,7 @@
 ### Basic Connection Test (SQL Server Authentication)
 
 ```powershell
-.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "master" -Username "sa" -Password "YourPassword123"
+.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "master" -Username "sadmin" -Password "YourPassword123"
 ```
 
 ### Connection Test (Windows Authentication)
@@ -55,7 +55,7 @@
 ### Execute a Query (SQL Server Authentication)
 
 ```powershell
-.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sa" -Password "Pass123" -Query "SELECT @@VERSION"
+.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sadmin" -Password "Pass123" -Query "SELECT @@VERSION"
 ```
 
 ### Execute a Query (Windows Authentication)
@@ -91,7 +91,7 @@
 .\connect_sql_database.ps1 `
     -ServerName "localhost" `
     -DatabaseName "master" `
-    -Username "sa" `
+    -Username "sadmin" `
     -Password "YourPassword" `
     -Query "SELECT @@VERSION AS SQLServerVersion"
 ```
@@ -123,7 +123,7 @@
 .\connect_sql_database.ps1 `
     -ServerName "localhost" `
     -DatabaseName "TestDB" `
-    -Username "sa" `
+    -Username "sadmin" `
     -Password "Pass123" `
     -Query "INSERT INTO Logs (Message, LogDate) VALUES ('Test Entry', GETDATE())"
 ```
@@ -172,7 +172,7 @@ $securePassword = Read-Host "Enter SQL Password" -AsSecureString
 $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($securePassword)
 $plainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
 
-.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sa" -Password $plainPassword
+.\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sadmin" -Password $plainPassword
 ```
 
 ## Troubleshooting

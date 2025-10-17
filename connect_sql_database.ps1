@@ -27,7 +27,7 @@
 
 .EXAMPLE
     # Connect using SQL Server Authentication and test connection
-    .\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "master" -Username "sa" -Password "YourPassword123"
+    .\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "master" -Username "sadmin" -Password "YourPassword123"
 
 .EXAMPLE
     # Connect using Windows Authentication
@@ -35,7 +35,7 @@
 
 .EXAMPLE
     # Execute a query using SQL Server Authentication
-    .\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sa" -Password "Pass123" -Query "SELECT @@VERSION"
+    .\connect_sql_database.ps1 -ServerName "localhost" -DatabaseName "TestDB" -Username "sadmin" -Password "Pass123" -Query "SELECT @@VERSION"
 
 .NOTES
     Author: Generated for SQL Database Connection
