@@ -13,7 +13,7 @@ $serverName = "localhost"
 $databaseName = "master"
 $username = "sa"
 # IMPORTANT: Never hardcode passwords in production!
-# $password = "YourPasswordHere"
+# $password = "***SECURE_PASSWORD***"  # Replace with actual password
 
 # Uncomment to run:
 # .\connect_sql_database.ps1 -ServerName $serverName -DatabaseName $databaseName -Username $username -Password $password
@@ -106,7 +106,7 @@ Write-Host "`n=== Example 7: Azure SQL Database ===" -ForegroundColor Cyan
 # $azureServer = "myserver.database.windows.net"
 # $azureDatabase = "MyDatabase"
 # $azureUsername = "sqladmin"
-# $azurePassword = "SecurePassword123!"
+# $azurePassword = "***SECURE_PASSWORD***"  # Replace with actual password
 #
 # .\connect_sql_database.ps1 `
 #     -ServerName $azureServer `

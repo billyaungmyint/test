@@ -74,11 +74,15 @@ function Get-ConnectionString {
     )
     
     if ($WindowsAuth) {
+        # Note: TrustServerCertificate=True is used for development/testing.
+        # For production, configure proper SSL certificates and remove this setting.
         return "Server=$Server;Database=$Database;Integrated Security=True;TrustServerCertificate=True;"
     } else {
         if ([string]::IsNullOrEmpty($User) -or [string]::IsNullOrEmpty($Pass)) {
             throw "Username and Password are required for SQL Server Authentication. Use -UseWindowsAuth for Windows Authentication."
         }
+        # Note: TrustServerCertificate=True is used for development/testing.
+        # For production, configure proper SSL certificates and remove this setting.
         return "Server=$Server;Database=$Database;User Id=$User;Password=$Pass;TrustServerCertificate=True;"
     }
 }
