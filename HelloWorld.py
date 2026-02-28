@@ -1,3 +1,1 @@
-for _ in range(6):
-    print("Hello World")
-
+print(bin(int(input()))[2:])
